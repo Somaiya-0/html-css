@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid Practice</title>
+    <style>
+        .container{
+            display:grid;
+            width: 500px;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+            
+        }
+        .profile-demo{
+            display:grid;
+            
+            height: 315px;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            align-items: center;
+            border:1px solid gray;
+            box-shadow: 5px 5px 5px gray;
+            
+        }
+        .colom-aling{
+            display:grid;
+            grid-template-columns: .5fr 2.5fr;
+            align-items: center;
+            background-color: gray;
+            
+        }
+        button{
+            color: azure;
+            background-color: rgb(51, 126, 255);
+            border: none;
+            width: 120px;
+            border-radius: 4px;
+            font-family: Arial;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="profile-demo" >
+
+    <div style="background-color: lightseagreen;">
+        <img src="swap.webp" style="width: 100%;height: 208px;">
+    </div>
+    <div style="background-color: lightblue;padding: 5px;">Oliver </div>
+    
+    <div class="colom-aling">
+        <div style="background-color: lightpink;padding-left: 5px;height: 35.66px;"><img src="img1.webp" style="width: 100%;"></div>   
+        <div style="background-color: lightgoldenrodyellow;padding-left: 5px;">2 mutual friends</div>
+    </div>
+    <div style="background-color: lightcoral; padding-left:5px;height: 35px;margin-top: 5px;"><button style="color: azure;background-color: rgb(51, 126, 255);border: none;width: 120px;border-radius: 4px;font-family: Arial;height: 30px;">Add Friend</button></div>
+</div>
+<div class="profile-demo" >
+
+    <div ><img src="Uni_Official_pic.jpeg" style="width: 100%;height: 100%;"></div>
+    <div style="background-color: white;padding-left: 5px;padding-top: 4px; font-weight: bold;font-family: Arial;">Somaiya </div>
+    
+    <div class="colom-aling" style="background-color: white;">
+        <div style="padding-left: 5px;height: 35.66px;"><img src="Uni_Official_pic.jpeg" style="width: 100%;height: 100%;border-radius: 50%;"></div>   
+        <div style="background-color: white;padding-left: 5px;font-family: Arial;color:rgb(90, 98, 105)">2 mutual friends</div>
+    </div>
+    <div style=" padding-left:5px;height: 35px;margin-top: 5px;"><button>Add Friend</button></div>
+</div>
+
+</div>
+</body>
+</html>

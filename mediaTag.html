@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Media</title>
+    <style>
+        table{
+            border-spacing: 0;
+        }
+        button{
+            border-radius: 30px;
+            width: 400px;
+            padding-left: 7px;
+            text-align:left;
+            background-color: #fff;
+            padding-top: 0px;
+            vertical-align: top;
+        }
+        #ysearch{
+            border: 0;
+            outline: none;
+            background-color: none;
+            width:90%;
+            font-size: 20px;
+            border-radius: 10%;
+            margin-right: 10px;
+            display: inline;
+        }
+        #search-icon{
+            font-size: 25px;
+            vertical-align: center;
+        }
+        #dev-v{
+            width:1000px; 
+            height:550px;
+            border-radius: 15px;
+        }
+        .videos{
+            padding-left: 15px;
+            padding-right: 0px;
+            padding-bottom: 0;
+            padding-top: 0;
+            height: 170px;
+            
+        }
+        .video-title{
+            font-family: Arial;
+            font-weight: bold;
+            width: 300px;
+            display: inline;
+            font-size: 16px;     
+        }
+        .video-info{
+            font-family: Arial;
+            line-height: 20px;
+            color:rgb(63, 63, 63);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <table style="line-height: 60px;">
+        <tr>
+            <td  style="width: 100px;"><img src="YouTube-Logo.png" width="100%" height="60px" style="display: inline;" ></td>
+            <td style="padding-left: 400px;" id="search"><button ><input type="search" id="ysearch" name="ysearch" placeholder="Search"><i class="fa fa-search" id="search-icon"></i></button></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td rowspan="3"> <iframe src="https://www.youtube.com/embed/lrIKt5uDWZo"  id="dev-v"></iframe></td>
+            <td class="videos">
+                <iframe src="https://www.youtube.com/embed/6QYcd7RggNU" style="border-radius: 14px;height: 100%;"></iframe>
+            </td>
+            <td style="vertical-align: top;padding-top: 8px;padding-left: 9px;">
+                <p class="video-title">Charlie Puth - Attention (Lyrics) </p>
+                <p class="video-info">Vibe Music &check; <br>16M views &#183; 1 year ago</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="videos"><iframe src="https://www.youtube.com/embed/KgA2TpKJC30" style="border-radius: 14px;height: 100%;"></iframe></td>
+            <td style="vertical-align: top;padding-top: 8px;padding-left: 9px;">
+                <p class="video-title" >Alexander Rybak - Fairytale - LIVE</p>
+                <p class="video-info">Eurovision Song &check;<br>241k veiws &#183; 13 hours ago</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="videos"><iframe src="https://www.youtube.com/embed/_sS78QxAZTA" style="border-radius: 14px;height: 100%;"></iframe></td>
+            <td style="vertical-align: top;padding-top: 8px;padding-left: 9px;">
+                
+                <p class="video-title">Bangladesh 'March for Justice': Students demand release of arrested peers and accountability</p>
+                <p class="video-info">Al Jazeera English  &check; <br>241k veiws &#183; 13 hours ago</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
