@@ -1,60 +1,89 @@
-<style>
-      .subscribe-button {
-            background-color: rgb(200, 0, 0);
-            border: none;
-            color: white;
-            height: 36px;
-            width: 120px;
-            cursor: pointer;
-            margin: 5px;
-            transition:opacity 0.15s;
-        }
-        .subscribe-button:hover{
-            opacity:0.6
-        }
-        .join-button{
-            background-color: white;
-            color: rgb(10, 99, 154);
-            border-color: rgb(43, 160, 233);
-            height: 36px;
-            width: 70px;
-            border-width: 2px;
-            border-style: groove;
-            cursor: pointer;
-            font-weight: bolder;
-        }
-        .join-button:hover{
-            background-color: rgb(46, 109, 198);
-            color:white;
-
-            transition:background-color 0.5s, color 0.5s;
-        }
-        .join-button:active{
-            background-color: aquamarine;
-            transition : background-color 0.15s;
-        }
-        .facebook-button{
-            background-color: rgb(128, 191, 250);
-            color: white;
-            font-size:17px;
-            font-weight: bold;
-            border-radius: 20px;
-            border-color: white;
-            border-style:none;
-            padding-left: 12px;
-            padding-right:12px;
-            padding-top: 9px;
-            padding-bottom: 9px; 
-            margin-left: 2px;
-            box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
-        }
-        .facebook-button:hover{
-            box-shadow: 5px 5px 10px rgba(0,0,0,0.20);
-        }
-</style>
-
-<button class="subscribe-button"> SUBSCRIBE </button>
-
-<button class="join-button">JOIN</button>
-
-<button class="facebook-button">FaceBook</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <style>
+        .subscribe-button {
+              background-color: rgb(200, 0, 0);
+              border: none;
+              color: white;
+              height: 36px;
+              width: 120px;
+              cursor: pointer;
+              margin: 5px;
+              transition:opacity 0.15s;
+          }
+          .subscribe-button:hover{
+              opacity:0.6
+          }
+          .join-button{
+              background-color: white;
+              color: rgb(10, 99, 154);
+              border-color: rgb(43, 160, 233);
+              height: 36px;
+              width: 70px;
+              border-width: 2px;
+              border-style: groove;
+              cursor: pointer;
+              font-weight: bolder;
+          }
+          .join-button:hover{
+              background-color: rgb(46, 109, 198);
+              color:white;
+  
+              transition:background-color 0.5s, color 0.5s;
+          }
+          .join-button:active{
+              background-color: aquamarine;
+              transition : background-color 0.15s;
+          }
+          .facebook-button{
+              background-color: rgb(128, 191, 250);
+              color: white;
+              font-size:17px;
+              font-weight: bold;
+              border-radius: 20px;
+              border-color: white;
+              border-style:none;
+              padding-left: 12px;
+              padding-right:12px;
+              padding-top: 9px;
+              padding-bottom: 9px; 
+              margin-left: 2px;
+              box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+          }
+          .facebook-button:hover{
+              box-shadow: 5px 5px 10px rgba(0,0,0,0.20);
+          }
+  </style>
+  
+  <button onclick=" subElement(); " class="subscribe-button"> SUBSCRIBE </button>
+  
+  <button class="join-button">JOIN</button>
+  
+  <button class="facebook-button">FaceBook</button>
+  
+  <script>
+  
+          function subElement()
+          {
+              const SubButton= document.querySelector('.subscribe-button');
+              if (SubButton.innerText === 'SUBSCRIBE')
+              {
+                  SubButton.innerHTML='SUBSCRIBED';
+  
+              }
+                  
+              else
+              {
+                  SubButton.innerHTML='SUBSCRIBE';
+              }
+          }
+  
+  </script>
+</body>
+</html>
